@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+h3{
+    text-align: center;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.timer {
+    margin: 20px 0;
+    position: relative;
+    height: 30px;
+    background: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#time-bar {
+    height: 100%;
+    background: #28a745;
+    width: 100%;
+    animation: fill 10s linear forwards;
+}
+
+@keyframes fill {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.correct {
+    background-color: #28a745 !important;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+}
+
+.option {
+    flex: 1 1 48%;
+    margin: 5px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover {
+    background: #e2e6ea;
+}

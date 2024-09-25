@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Time!</h1>
+        <h3>Developed by Nayon Chandra Saha</h3>
+        <div id="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div id="answers" class="options"></div>
+            <div class="timer">
+                <div id="time-bar"></div>
+                <span id="time">10</span> seconds remaining
+            </div>
+            <button id="next" class="hidden">Next Question</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Your Score: <span id="score-value"></span></h2>
+            <h3>Correct Answers:</h3>
+            <ul id="correct-answers"></ul>
+            <button id="restart">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
